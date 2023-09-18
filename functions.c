@@ -65,7 +65,10 @@ int print_num(int d)
 	positive[l] = '\0';
 	ver = l - 1;
 
-	while (rev > ver)
+	if (positive[0] == '-')
+		rev = 1;
+
+	while (rev < ver)
 	{
 		tmp = positive[rev];
 		positive[rev] = positive[ver];
