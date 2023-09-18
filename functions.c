@@ -27,7 +27,7 @@ int print_string(char *s)
 		len++;
 		s++;
 	}
-	return (write(1, (s – len), len));
+	return (write(1, (s - len), len));
 }
 
 /**
@@ -38,13 +38,13 @@ int print_string(char *s)
  */
 int print_num(int d)
 {
-	int l = 0, rev = 0, rev;
+	int l = 0, rev = 0, ver;
 	char positive[11];
 	char tmp;
 
 	if (d == 0)
 	{
-		positive[l] = ‘0’;
+		positive[l] = '0';
 		l++;
 	}
 	else
@@ -57,7 +57,7 @@ int print_num(int d)
 		}
 		while (d > 0)
 		{
-			positive[l] = (d % 10) + ‘0’;
+			positive[l] = (d % 10) + '0';
 			d /= 10;
 			l++;
 		}
