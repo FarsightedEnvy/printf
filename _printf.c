@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == 's')
 			{
-				*s = va_arg(args, char *);
+				s = va_arg(args, char *);
 				len += print_string(s);
 			}
 			else if (*format == 'd' || *format == 'i')
