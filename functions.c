@@ -78,3 +78,14 @@ int print_num(int d)
 	}
 	return (write(1, positive, l));
 }
+
+/**
+ * print_perc - function that prints a percentage sign
+ *
+ * Return: percentage sign printed to stdout
+ */
+int print_perc(void)
+{
+	return (write(1, "%%", 1));
+}
+
