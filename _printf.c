@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == '%')
 			{
-				write(1, "%", 1);
+				print_perc();
 				len++;
 			}
 		}
